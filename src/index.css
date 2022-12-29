@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+:root {
+  --body-color: #1F2025;
+  --white-color: #FFFFFF;
+}
+
+body {
+  font-family: 'Urbanist', sans-serif;
+  background: url("../public/images/background.svg") no-repeat 0 0 / cover;
+  height: 500vh;
+  background-color: var(--body-color);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 100%;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}

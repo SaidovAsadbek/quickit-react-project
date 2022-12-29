@@ -1,0 +1,73 @@
+.hero-navbar {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.hero-navbar .links,
+.hero-navbar .left-side {
+    gap: 40px;
+}
+
+.hero-navbar .links a {
+    color: var(--white-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    display: block;
+    position: relative;
+}
+
+.hero-navbar .links a::after {
+    content: "";
+    width: 0;
+    height: 1px;
+    background: var(--white-color);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.hero-navbar .links a.activeClass::after,
+.hero-navbar .links a:hover::after {
+    width: 100%;
+}
+
+.div-provider {
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+    opacity: .2;
+    margin: 0 20px;
+}
+
+.request-btn button {
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.request-btn button a {
+    color: var(--white-color);
+    display: block;
+    padding: 15px 20px 15px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.request-btn button:last-child a {
+    box-shadow: 0px 5px 15px rgba(32, 91, 241, 0.2);
+    background: #205BF1;
+    display: flex;
+    align-items: center;
+}
+
+.request-btn button:last-child a:hover {
+    background: #124ee7;
+}
